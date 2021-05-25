@@ -58,7 +58,7 @@ const Home = () => {
       </Head>
       <div className="flex flex-col-reverse items-center relative justify-center">
         <div className="text-center md:text-left md:absolute left-0 w-2/4">
-          <p className="my-10 md:w-2/5 text-base md:text-xs lg:text-sm xl:text-base leading-extra-28">
+          <p className="my-10 md:w-1/2 2xl:w-2/5 text-base md:text-xs lg:text-sm xl:text-base leading-extra-28">
             WE ARE INTRODUCING FOR THE FIRST TIME EVER INDIE AND MOD “CASUAL ESPORTS”.
             <br/>
             <br/>
@@ -78,14 +78,14 @@ const Home = () => {
             </p>
           )} */}
           <Button
-            className="px-5 py-6 leading-extra-35 w-354 text-20"
-            onMouseEnter={() => setShowAdd(true)}
-            onMouseLeave={() => setShowAdd(false)}
+            className="px-5 py-6 text-base lg:leading-extra-35 w-280 lg:w-354 lg:text-20"
+            // onMouseEnter={() => setShowAdd(true)}
+            // onMouseLeave={() => setShowAdd(false)}
             onClick={() => router.push('/quest')}
           >
             {isClicked ? 'Coming Soon' : 'Are you ready to mod the metagame?'}
           </Button>
-          {showAdd && (
+          {/* {showAdd && (
             <p className="text-yellow-400 md:text-sm absolute mt-4 text-center text-2xs ">
               every human is a player.
               <br />
@@ -93,7 +93,7 @@ const Home = () => {
               <br />
               this is what we are pioneering.
             </p>
-          )}
+          )} */}
         </div>
       </div>
     </div>

@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <div className="w-full invisible md:visible">
-      <div className="bg-black px-4 xl:px-12 flex items-center text-xs text-white justify-between absolute w-full">
+      <div className="bg-black z-50 px-4 xl:px-12 flex items-center text-xs text-white justify-between absolute w-full">
         <div className="flex items-center my-4">
           <Link href="/">
             <a>
