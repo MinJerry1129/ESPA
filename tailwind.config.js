@@ -8,6 +8,7 @@ module.exports = {
         "detail-sm": "1.57vw",
         mod: "1vw",
         "mod-sm": "2vw",
+        20:'20px',
       },
       colors: {
         primary: "#2340B0",
@@ -21,11 +22,23 @@ module.exports = {
         "9/10": "90%",
         full: "100%",
       },
+      maxWidth: {
+        732: '732px',
+      },
       width: {
         60: "15rem",
         72: "18rem",
         84: "21rem",
         96: "24rem",
+        198: "198px",
+        354: '354px',
+      },
+      height: {
+        57: "57px",
+      },
+      lineHeight: {
+        'extra-35': '35px',
+        'extra-28': '28px',
       },
       screens: {
         'laptop-3': '710px',

@@ -19,14 +19,14 @@ const Footer = () => {
           >
             <img src="/socials/twitter.png" width={26} height={26} alt="twitter" />
           </a>
-          <a
+          {/* <a
             className="mr-2"
             target="_blank"
             rel="noreferrer"
             href="https://www.instagram.com/espa4play/"
           >
             <img src="/socials/ig.png" width={26} height={26} alt="ig" />
-          </a>
+          </a> */}
           <a
             className="mr-2"
             target="_blank"

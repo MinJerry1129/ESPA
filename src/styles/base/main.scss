@@ -239,19 +239,32 @@ td:last-child {
     180deg
     , #BD004F 0%, rgba(41, 30, 72, 0.37) 75%);
 }
-.menu-link:hover::before {
-  content: "";
-  display: block;
-  position: relative;
-  top: 49px;
-  height: 2px;
-  margin-top: -2px;
-  width: 100%;
-  background: #8cd6ff;
+.menu-link {
+  font-size: 11px;
+  &:hover::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 49px;
+    height: 2px;
+    margin-top: -2px;
+    width: 100%;
+    background: #8cd6ff;
+  }
+}
+.right-menu {
+  font-size: 11px;
 }
 .leaderboard {
   color: #01F0FF;
 }
+.digi {
+  color: #FFB801;
+}
+.discover {
+  color: #FF00E5;
+}
+
 a {
   text-decoration: none;
 }
@@ -260,6 +273,10 @@ p,
 button,
 div {
   font-size: 12px;
+}
+.return {
+  bottom: 95px;
+  right: 52px;
 }
 
 .input-discover {

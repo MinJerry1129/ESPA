@@ -57,16 +57,15 @@ const Home = () => {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       </Head>
       <div className="flex flex-col-reverse items-center relative justify-center">
-        <div className="text-center md:text-left md:absolute left-0">
-          <p className="my-10 md:w-2/5 text-base md:text-xs lg:text-sm xl:text-base ">
+        <div className="text-center md:text-left md:absolute left-0 w-2/4">
+          <p className="my-10 md:w-2/5 text-base md:text-xs lg:text-sm xl:text-base leading-extra-28">
             WE ARE INTRODUCING FOR THE FIRST TIME EVER INDIE AND MOD “CASUAL ESPORTS”.
             <br/>
             <br/>
-            OUR MISSION IS TO LIBERATE FASHION AND GAMING WITH MOD CULTURE.
+            OUR MISSION IS TO LIBERATE FASHION AND GAMING WITH MOD CULTURE. WE ARE BUILDING OUT THE METAVERSE, ESTABLISHING A WEB3 PLAYER CREATOR ECONOMY.
           </p>
-          <h4 className="mb-12 md:mb-4">GET AN IDEA OF OUR ECOSYSTEM.</h4>
-          <Button className="text-xs md:text-xs w-60 md:w-auto md:px-5" onClick={() => router.push('/role')}>
-            CHOOSE YOUR ROLE
+          <Button className="text-xs md:text-xs w-60 md:w-auto md:px-5" onClick={() => router.push('/ecosystem')}>
+            SEE ECOSYSTEM
           </Button>
         </div>
         <div className="mb-10 md:mb-0 z-10">
@@ -79,15 +78,15 @@ const Home = () => {
             </p>
           )} */}
           <Button
-            className="text-base md:text-xs lg:text-sm xl:text-base px-5 py-6 w-60 md:w-auto"
+            className="px-5 py-6 leading-extra-35 w-354 text-20"
             onMouseEnter={() => setShowAdd(true)}
             onMouseLeave={() => setShowAdd(false)}
-            onClick={() => router.push('/playnow')}
+            onClick={() => router.push('/quest')}
           >
-            {isClicked ? 'Coming Soon' : 'JOIN ESPORTS BATTLES'}
+            {isClicked ? 'Coming Soon' : 'Are you ready to mod the metagame?'}
           </Button>
           {showAdd && (
-            <p className="text-yellow-400 md:text-sm absolute mt-4 text-center text-2xs w-60 md:w-72">
+            <p className="text-yellow-400 md:text-sm absolute mt-4 text-center text-2xs ">
               every human is a player.
               <br />
               this is the future.
