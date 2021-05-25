@@ -13,19 +13,69 @@
 }
 
 .modal {
-  background-color: black;
+  max-width: 1200px;
+  @media (max-width: 1300px) {
+    width: 90%;
+  }
+  margin: auto;
+  height: auto;
   padding: 48px;
+  @media (max-width: 980px) {
+    padding: 0;
+  }
   position: relative;
-  max-width: 840px;
   margin: 200px auto;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.content {
+  width: 704px;
+  @media (max-width: 870px) {
+    width: 100%;
+  }
+  height: 311px;
+  position: relative;
+}
+.background_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.wallets {
+  padding: 36px 146px;
+  @media (max-width: 980px) {
+    padding:36px 10%;
+  }
+}
+.corner {
+  background-image: url('../../../public/corner.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -20px;
+  right: -50px;
+  width: 128px;
+  height: 116px;
+  position: absolute;
+}
+.comment {
+  background-image: url('../../../public/comment.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -180px;
+  right: -280px;
+  width: 304px;
+  height: 212px;
+  position: absolute;
 }
 
 .closeIcon {
   @include reset-button(); 
   @include active(); 
   position: absolute;
-  right: 32px;
-  top: 32px;
+  right: 30px;
+  top: 30px;
 }
 
 .title {
@@ -34,6 +84,7 @@
   line-height: 24px;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 44px;
   text-transform: uppercase;
 }
 

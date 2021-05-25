@@ -30,8 +30,13 @@ const ModalConnectWallet = ({ className, title }) => {
     <>
       {createPortal(
         <Modal onClose={() => handleClose()} title={title} className={styles.connectwallet}>
-          <div className={styles.description}>
-            If you don’t have a wallet already set up then choose “Arkane Wallet”. 
+          <div className={styles.modalItem} onClick={() => handleClick(WALLET_ARKANE)}>
+            <span className={styles.modalsTextForIcon}>Arkane Wallet</span>
+            <img
+              className={styles.modalIcon}
+              src="https://raw.githubusercontent.com/ArkaneNetwork/content-management/master/ads/icons/arkane-network.png"
+              alt="arkane"
+            />
           </div>
           <div className={styles.modalItem} onClick={() => handleClick(WALLET_METAMASK)}>
             <span className={styles.modalsTextForIcon}>Metamask</span>
@@ -42,14 +47,6 @@ const ModalConnectWallet = ({ className, title }) => {
                 className={styles.notificationBox}
               />
             )}
-          </div>
-          <div className={styles.modalItem} onClick={() => handleClick(WALLET_ARKANE)}>
-            <span className={styles.modalsTextForIcon}>Arkane Wallet</span>
-            <img
-              className={styles.modalIcon}
-              src="https://raw.githubusercontent.com/ArkaneNetwork/content-management/master/ads/icons/arkane-network.png"
-              alt="arkane"
-            />
           </div>
         </Modal>,
         document.body

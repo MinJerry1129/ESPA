@@ -8,23 +8,30 @@ const Modal = ({
 }) => (
   <div className={styles.wrapper}>
     <div className={cn(styles.modal, className)}>
-      {(title || withCloseIcon) && (
-        <div className={styles.modalHeader}>
-          {title && <p className={cn(styles.title, titleStyle)}>{title}</p>}
-          {withCloseIcon && (
-            <button
-              onClick={onClose}
-              className={styles.closeIcon}
-            >
-              <img src="/images/icons/close-button.svg" alt="close-icon" />
-            </button>
-          )}
+      <div className={styles.content}>
+        <div className={styles.corner}></div>
+        <div className={styles.comment}></div>
+        <img className={styles.background_img} src="/create_wallet.png"/>
+        <div className={styles.wallets}>
+        {(title || withCloseIcon) && (
+          <div className={styles.modalHeader}>
+            {title && <p className={cn(styles.title, titleStyle)}>{title}</p>}
+            {withCloseIcon && (
+              <button
+                onClick={onClose}
+                className={styles.closeIcon}
+              >
+                <img src="/images/icons/close-button.svg" alt="close-icon" />
+              </button>
+            )}
+          </div>
+        )}
+        <div>
+          {!!text && text.map((item) => <p key={item} className={styles.modalBodyText}>{item}</p>)}
         </div>
-      )}
-      <div>
-        {!!text && text.map((item) => <p key={item} className={styles.modalBodyText}>{item}</p>)}
+        {children}
+        </div>
       </div>
-      {children}
     </div>
   </div>
 );
