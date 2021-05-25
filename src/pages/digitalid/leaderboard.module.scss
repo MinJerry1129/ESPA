@@ -1,0 +1,118 @@
+.leaderHeader {
+  background: linear-gradient(to right, #74197f, rgba(46, 244, 248, 0.54));
+  width: fit-content;
+  padding: 10px;
+}
+.leaderContainer {
+  width: calc(100% - 200px);
+  display: flex;
+  position: relative;
+  span {
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    height: 70px;
+  }
+  div {
+    position: absolute;
+    left: 80px;
+    height: 70px;
+    width: 100%;
+    background: linear-gradient(to right, #74197f, rgba(46, 244, 248, 0.54));
+
+    img {
+      margin-left: -30px;
+      margin-top: -16px;
+    }
+  }
+  margin-bottom: 40px;
+}
+
+.metaLeaderBoardBox {
+  border: 11px solid #21798e;
+}
+
+.levelUp1 {
+  width: 100px;
+  margin: auto;
+}
+
+.levelUp {
+  width: 100px;
+  float: right;
+}
+
+.leaderboardCard {
+  text-align: center;
+  background: linear-gradient( 90deg, #211A3B 0%, #040203 100.78%);
+  box-shadow: 0px 4px 4px rgb(255 255 255 / 72%);
+  position: relative;
+  max-width: 480px;
+  max-height: 246px;
+}
+
+.discoverCard {
+  border: solid;
+  border-width: 11px !important;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #821e2f, #9344cb);
+}
+
+.metaIDCard {
+  border: solid;
+  border-width: 11px !important;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #86391d, #028bd9);
+}
+
+.amongUsCard {
+  border: solid;
+  border-width: 11px !important;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #740e48, #028bdb);
+}
+
+.minecraftLeaderboard {
+  border: solid;
+  border-width: 11px !important;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #743f1b, #dacf01);
+}
+
+.robloxLeaderboard {
+  border: solid;
+  border-width: 11px !important;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #226c8e, #5a0ea8);
+}
+
+@media only screen and (max-width: 480px) {
+  .leaderContainer {
+    width: calc(100% - 20px);
+    display: flex;
+    position: relative;
+    span {
+      font-size: 12px;
+      align-items: center;
+      display: flex;
+      height: 30px;
+    }
+    div {
+      position: absolute;
+      left: 40px;
+      height: 30px;
+      width: calc(100% - 60px);
+      background: linear-gradient(to right, #74197f, rgba(46, 244, 248, 0.54));
+
+      img {
+        margin-left: -12px;
+        margin-top: -7px;
+        width: 46px;
+      }
+    }
+    margin-bottom: 40px;
+  }
+}
+.background {
+  background: url(/leaderboard/bg.png);
+}

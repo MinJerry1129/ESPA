@@ -1,0 +1,124 @@
+.profileWrapper {
+  display: flex;
+  padding: 20px 86px;
+  font-family: 'Inter';
+  // background: linear-gradient(to bottom right, #7000FF, rgba(204, 0, 255, 0.73));
+
+  @media only screen and (max-width: 980px) {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+}
+
+.leftSideWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.avatarIDSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  img {
+    width: 120px;
+    height: 120px;
+    margin-right: 24px;
+    border-radius: 50%;
+  }
+  span {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+}
+
+.email {
+  font-size: 1.6875rem;
+  margin-bottom: 30px;
+}
+
+.inputItemwrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  span {
+    font-size: 1.6875rem;
+  }
+  p {
+    margin-top: 18px;
+    font-size: 2.0625rem;
+    font-weight: 900;
+  }
+}
+
+.modalButton {
+  width: 154px;
+  font-size: 0.9375rem;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.rightSideWrapper {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.titleWrapper {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  font-weight: bold;
+  color: #111111;
+}
+
+.divider {
+  width: 227px;
+  height: 2px;
+  background: #111111;
+  margin-top: 10px;
+  margin-bottom: 44px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
+  row-gap: 68px;
+  column-gap: 84px;
+  margin-bottom: 100px;
+}
+
+.loader {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 137px;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+  
+  text-shadow: -1px 0 #FFFFFF 1px 0 #FFFFFF 0 1px #FFFFFF 0 -1px #FFFFFF;
+  // border: 1px solid #FFFFFF;  
+}
+
+.metaTitle {
+  font-family: Knife Princess;
+}

@@ -1,0 +1,19 @@
+.wrapper {
+  .idFrame {
+    .label {
+      font-family: Ode Gaming;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 31px;
+      text-align: center;
+      color: #FFFFFF;
+      border-bottom: 1px solid white;
+
+      @media (max-width: 764px) {
+        font-size: 10px;
+      }
+    }
+  }
+  
+}

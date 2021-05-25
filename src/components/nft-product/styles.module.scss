@@ -1,0 +1,137 @@
+@import '../../styles/helpers/variables.scss';
+@import '../../styles/helpers/helpers.scss';
+
+.item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.clothesName {
+  @include active();
+  font-size: 1.5rem;
+  line-height: 24px;
+  margin-bottom: 15px;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.designerWrapper {
+  min-height: 36px;
+}
+
+.clothesPhotoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 618px;
+  // height: 605px;
+  // padding: 45px;
+  padding: 15px 0;
+}
+
+.gap {
+  width: 0;
+  height: 0;
+  border-right: 39px solid transparent;
+  border-top: 39px solid orangered;
+  display: block;
+}
+
+.bannerText {
+  background-color: orangered;
+  display: block;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 4;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  right: 20px;
+  top: 15px;
+}
+
+.clothesPhoto {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: contain;
+  box-sizing: content-box;
+}
+
+.card {
+  background: $lightGray1;
+  margin-top: 16px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.imageWrapper {
+  position: relative;
+  flex-grow: 1;
+}
+
+.chart {
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  right: 2px;
+  opacity: 0;
+  visibility: hidden;
+  max-width: 595px;
+  background: rgba(230, 230, 230, 0.5);
+  padding: 25px 11px 5px 11px;
+
+  &.chartActive {
+    opacity: 1;
+    visibility: initial;
+  }
+
+  :global {
+    .highcharts-grid-line {
+      stroke-width: 0;
+    }
+  }
+}
+
+.triangle {
+  @include active();
+  position: absolute;
+  right: -8px;
+  bottom: -6px;
+  padding: 10px 10px 24px 28px;
+  border: 0;
+  background-color: transparent;
+  width: 20px;
+  height: 15px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.triangleActive {
+    bottom: 130px;
+    transform: rotate(180deg);
+  }
+}
+
+.triangleImg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

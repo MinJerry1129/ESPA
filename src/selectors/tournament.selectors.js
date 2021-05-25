@@ -1,0 +1,1 @@
+export const getTournamentInfo = (state) => state.tournament.get('tournamentInfo');

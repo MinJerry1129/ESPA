@@ -1,0 +1,51 @@
+.cardWrapper {
+  width: 37vw;
+  height: 21vw;
+  background: linear-gradient(90deg, rgba(59, 20, 205, 0.68) 0%, rgba(0, 206, 210, 0.612) 100.78%);
+
+  border: 0.73vw solid;
+  border-image-slice: 1;
+  border-width: 0.73vw;
+  border-image-source: linear-gradient(to right, #DE5000 -0.66%, rgba(0, 163, 255));
+  display: flex;
+  flex-direction: row;
+
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .subWrapper {
+      display: flex;
+      flex-direction: row;
+      height: 20%;
+    }
+  }
+
+  @media (max-width: 764px) {
+    width: 90vw;
+    height: 51vw;
+  }
+}
+
+.profileFrame {
+  width: 54%;
+  margin-left: -5%;
+  margin-top: 1%;
+}
+
+.textDiv {
+  font-family: Ode Gaming;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80%;  
+
+  position: absolute;
+  left: 0.6vw;
+  top: 25%;
+  color: white;
+}
+
+.collectorBadge {
+  margin: -0.73vw;
+}

@@ -1,0 +1,71 @@
+.leaderHeader {
+  background: linear-gradient(to right, #74197f, rgba(46, 244, 248, 0.54));
+  width: fit-content;
+  padding: 10px;
+}
+.leaderContainer {
+  width: calc(100% - 200px);
+  display: flex;
+  position: relative;
+  span {
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    height: 70px;
+  }
+  div {
+    position: absolute;
+    left: 80px;
+    height: 70px;
+    width: 100%;
+    background: linear-gradient(to right, #74197f, rgba(46, 244, 248, 0.54));
+
+    img {
+      margin-left: -30px;
+      margin-top: -16px;
+    }
+  }
+  margin-bottom: 40px;
+}
+
+.metaLeaderBoardBox {
+  border: 11px solid #21798e;
+}
+
+.leaderboardCard {
+  text-align: center;
+  background: linear-gradient( 90deg, #211A3B 0%, #040203 100.78%);
+  box-shadow: 0px 4px 4px rgb(255 255 255 / 72%);
+  position: relative;
+}
+
+@media only screen and (max-width: 480px) {
+  .leaderContainer {
+    width: calc(100% - 20px);
+    display: flex;
+    position: relative;
+    span {
+      font-size: 12px;
+      align-items: center;
+      display: flex;
+      height: 30px;
+    }
+    div {
+      position: absolute;
+      left: 40px;
+      height: 30px;
+      width: calc(100% - 60px);
+      background: linear-gradient(to right, #74197f, rgba(46, 244, 248, 0.54));
+
+      img {
+        margin-left: -12px;
+        margin-top: -7px;
+        width: 46px;
+      }
+    }
+    margin-bottom: 40px;
+  }
+}
+.background {
+  background: url(/leaderboard/bg.png);
+}

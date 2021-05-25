@@ -1,0 +1,115 @@
+.modalWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  span {
+    font-size: 1rem;
+    margin-top: -24px;
+    margin-bottom: 15px;
+  }
+}
+.modalButton {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px !important;
+  font-size: 1.125rem;
+  line-height: 22px;
+  background-color: white;
+  font-family: 'Inter';
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: black;
+  &:hover {
+    color: #000000 !important;
+    --border-opacity: 0 !important;
+    border-color: white !important;
+  }
+}
+.inputItem {
+  display: flex;
+  flex-direction: column;
+  label {
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 9px;
+  }
+  input {
+    width: 268px;
+    height: 44px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+    padding-left: 12px;
+  }
+  p {
+    width: 268px;
+    white-space: nowrap;
+    position: absolute;
+    margin-top: 72px;
+    padding-left: 12px;
+    font-size: 0.75rem;
+    color: red;
+  }
+}
+
+.loader {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: auto !important;
+}
+
+.questionMark {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #e6e6e6;
+  border-radius: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5625rem !important;
+  line-height: 11px;
+  font-weight: 600;
+  background: #fff;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+.hint {
+  display: none;
+  position: absolute;
+  width: 165px;
+  padding: 4px;
+  border: 0.5px solid #000000;
+  background: #fff;
+  font-size: 0.5625rem !important;
+  line-height: 120%;
+  top: 25px;
+  left: 75px;
+}
+
+.questionMark:hover + .hint {
+  display: block;
+}
+
+.userIdRow {
+  position: relative;
+}
+
+.currentAddress {
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
+}

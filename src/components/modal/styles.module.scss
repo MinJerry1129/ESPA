@@ -1,0 +1,50 @@
+@import '../../styles/helpers/helpers.scss';
+
+.wrapper {
+  background-color: rgba(0,0,0,0.2);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 13;
+  font-family: "Inter";
+}
+
+.modal {
+  background-color: black;
+  padding: 48px;
+  position: relative;
+  max-width: 840px;
+  margin: 200px auto;
+}
+
+.closeIcon {
+  @include reset-button(); 
+  @include active(); 
+  position: absolute;
+  right: 32px;
+  top: 32px;
+}
+
+.title {
+  color: white;
+  font-size: 2rem;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modalBodyText {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 400;
+
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
+
+

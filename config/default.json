@@ -1,0 +1,63 @@
+{
+  "CLIENT_URL": "",
+  "BACKEND_API": "",
+  "STATIC_DOMAIN": "",
+  "TTL_STATIC": 3600000,
+  "TTL_NO_STATIC": 600000,
+  "IS_PROD": false,
+  "SENTRY_DSN": "https://efd721a5be464838a0166fa08f84d7ab@o484615.ingest.sentry.io/5538941",
+  "ENVIRONMENT": "",
+  "NETWORKS": ["rinkeby", "goerli", "mumbai", "mainnet", "matic"],
+  "API_URLS": {
+    "mainnet": "https://api.thegraph.com/subgraphs/name/digitalax/digitalax",
+    "rinkeby": "https://api.thegraph.com/subgraphs/name/digitalax/digitalaxropsten",
+    "mumbai": "https://api.thegraph.com/subgraphs/name/digitalax/digitalaxmumbai",
+    "matic": "https://api.thegraph.com/subgraphs/name/digitalax/digitalaxmatic"
+  },
+  "DEFAULT_NETWORK": "matic",
+  "DEFAULT_WEB3_URL": "https://mainnet.infura.io/v3/6e9690131f584ee0a8b445ebb4740f8b",
+  "WEB3_URLS": {
+    "GOERLI": "https://goerli.infura.io/v3/280e56393dd1469e8cadc4132a5ec37c",
+    "MUMBAI": "https://rpc-mumbai.maticvigil.com/v1/1590d9f343d27b977aa149ac37ebd8f2aad7f68a",
+    "MATIC": "https://rpc-mainnet.maticvigil.com/v1/1590d9f343d27b977aa149ac37ebd8f2aad7f68a"
+  },
+  "EXPLORER_URLS": {
+    "mainnet": "https://etherscan.io/",
+    "rinkeby": "https://rinkeby.etherscan.io/",
+    "goerli": "https://goerli.etherscan.io/",
+    "mumbai": "https://mumbai-explorer.matic.today/",
+    "matic": "https://explorer-mainnet.maticvigil.com/"
+  },
+  "REWARD_CONTRACT_ADDRESSES": {
+    "mainnet": "0xC155DDd8aA737aA53bBCea9EA62CAC0A3EEc942f",
+    "rinkeby": "0xb0DED58EF09929b0A0F2b10f48D42883df97466E",
+    "goerli": "0xb0DED58EF09929b0A0F2b10f48D42883df97466E",
+    "mumbai": "0xb0DED58EF09929b0A0F2b10f48D42883df97466E",
+    "matic": "0xb0DED58EF09929b0A0F2b10f48D42883df97466E"
+  },
+  "DIGITAL_MARKETPLACE_ADDRESSES": {
+    "mainnet": "0xCC48554581c17c2837C13B1685E0e784fADC1c3b",
+    "rinkeby": "0xAcA4eaf530085B062dB530634DA637e266a823C9",
+    "goerli": "0x655f2166b0709cd575202630952d71e2bb0d61af",
+    "mumbai": "0x1c6976911FdcBF6BaAEa17c80051525c41681Dae",
+    "matic": "0xB0b0859117512410Ec1a6Da6E012Ff35E65543D7"
+  },
+  "MONA_TOKEN_ADDRESSES": {
+    "mainnet": "0x275f5ad03be0fa221b4c6649b8aee09a42d9412a",
+    "rinkeby": "0x13379fe0e6992180ed0ac5174a02479896f9c510",
+    "goerli": "0x8472ACaFc4C5c10a1762C7d6E74f13ED7B994f3d",
+    "mumbai": "0xeFd3D060dDcFed7903806503440db1089031AF3A",
+    "matic": "0x6968105460f67c3BF751bE7C15f92F5286Fd0CE5"
+  },
+  "USDT_ADDRESS": {
+    "mainnet": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "rinkeby": "0xfb1d709cb959ac0ea14cad0927eabc7832e65058",
+    "goerli": "0xba62bcfcaafc6622853cca2be6ac7d845bc0f2dc",
+    "mumbai": "0x3813e82e6f7098b9583FC0F33a962D02018B6803",
+    "matic": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
+  },
+  "EXCHANGE_API": "https://api.coingecko.com/api/v3",
+  "IMGIX_URL": "digitalax.imgix.net",
+  "TIME_INTERVAL": 5000,
+  "QUICKSWAP_ROUTER": "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff"
+}

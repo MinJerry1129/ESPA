@@ -1,0 +1,377 @@
+@font-face {
+  font-family: "Ode Gaming";
+  src: url("/fonts/Ode to Idle Gaming.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tw Cent";
+  src: url("/fonts/TCV.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mirza";
+  src: url("/fonts/Mirza.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Awkward";
+  src: url("/fonts/Awkward.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MixGiants";
+  src: url("/fonts/MixGiants.ttf"),
+    url("/fonts/MixGiants.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Minecraft";
+  src: url("/fonts/Minecraft.ttf"),
+    url("/fonts/Minecraft.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+
+.mobile-invert {
+  filter: invert(0);
+  left: 0px;
+  top: 0px;
+  position: relative;
+  width: auto;
+  height: 10rem;
+}
+
+.espa-icon {
+  right: 0px;
+  top: 0px;
+  position: relative;
+}
+
+.right-pane {
+  min-height: inherit;
+}
+
+@media (max-width: 1000px) {
+  .mobile-invert {
+    filter: invert(1);
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    width: 7px;
+    height: 5rem;
+  }
+
+  .espa-icon {
+    position: absolute;
+  }
+
+  .right-pane {
+    min-height: 550px;
+  }
+}
+
+.ppb {
+  padding-bottom: 0.1rem;
+}
+
+button:focus {
+  outline: 0;
+}
+
+#movetext {
+  animation: moving 10s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes moving {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+.font-awkward {
+  font-family: "Awkward";
+}
+
+.font-mixgiants {
+  font-family: 'MixGiants'
+}
+
+.font-minecraft {
+  font-family: 'Minecraft';
+}
+
+.font-inter {
+  font-family: "Inter";
+}
+
+.font-mirza {
+  font-family: "Mirza";
+}
+
+.font-rubik {
+  font-family: "Rubik";
+}
+.font-ode-gaming {
+  font-family: "Ode Gaming";
+}
+
+.font-tw-cent {
+  font-family: "Tw Cent";
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: underline;
+}
+
+table {
+  border-spacing: 0;
+  border: 1px solid black;
+  width: 100%;
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+th,
+td {
+  margin: 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 0;
+}
+
+.main-container {
+  min-height: calc(100vh - 120px);
+}
+
+@media (max-width: 1023px) {
+  .main-container {
+    margin-top: 79px;
+  }
+}
+
+.container-wrapper {
+  background: linear-gradient(
+    to bottom,
+    rgb(45, 32, 80) 100vh,
+    rgb(45, 32, 80),
+    rgb(75, 17, 79)
+  );
+}
+.background-image {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.page-container {
+  min-height: calc(100vh);
+}
+
+.back-overlay {
+  width: 100vw;
+  position: absolute;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(32, 23, 60, 1),
+    rgba(41, 30, 72, 0.35)
+  );
+}
+.back-overlay2 {
+  background: linear-gradient(
+      to bottom,
+      rgba(32, 23, 60, 1),
+      rgba(41, 30, 72, 0.35)
+    ),
+    linear-gradient(to bottom, rgba(45, 32, 80, 0.13), rgba(45, 32, 80, 1));
+}
+.back-overlay3 {
+  width: 100vw;
+  position: absolute;
+  height: 100vh;
+  background: linear-gradient(
+    180deg
+    , rgba(20, 20, 20, 0.13) 0%, #24086D 100%), linear-gradient(
+    180deg
+    , #BD004F 0%, rgba(41, 30, 72, 0.37) 75%);
+}
+.back-overlay4 {
+  background: linear-gradient(
+    180deg
+    , rgba(20, 20, 20, 0.13) 0%, #24086D 100%), linear-gradient(
+    180deg
+    , #BD004F 0%, rgba(41, 30, 72, 0.37) 75%);
+}
+.menu-link:hover::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 49px;
+  height: 2px;
+  margin-top: -2px;
+  width: 100%;
+  background: #8cd6ff;
+}
+.leaderboard {
+  color: #01F0FF;
+}
+a {
+  text-decoration: none;
+}
+a,
+p,
+button,
+div {
+  font-size: 12px;
+}
+
+.input-discover {
+  height: 51px;
+  background: linear-gradient(90deg, rgba(59, 20, 205, 0.44) -45.47%, rgba(240, 19, 165, 0.44) -45.45%, rgba(59, 20, 205, 0.44) -45.43%);
+}
+
+.gradient-border {
+  border: solid;
+  border-width: 5px !important;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #a0773f, #34bcae);
+}
+/* ESPA Landing Page With Glow 2 1 */
+
+.meta-crew-gradient-border {
+  background: #331b7b;
+  border: solid;
+  border-width: 5px !important;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #a0773f, #34bcae);
+}
+
+.sheriff-crew-gradient-border {
+  background: #88176e;
+  border: solid;
+  border-width: 5px !important;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #893e78, #2fa8bf);
+}
+
+.minecraft-crew-gradient-border {
+  background: #7a332e;
+  border: solid;
+  border-width: 5px !important;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #cb8502, #eed001);
+}
+
+.profile-container {
+  position: relative;
+}
+
+.profile-image {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.profile-pencil {
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 16px;
+  height: 16px;
+}
+
+.profile-cancel {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  width: 16px;
+  height: 16px;
+}
+
+.profile-image-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 62.5%;
+  }
+  .menu-link:hover::before {
+    content: none;
+  }
+  .profile-image {
+    width: 42px;
+    height: 42px;
+  }
+  .profile-pencil {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .profile-cancel {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .input-discover {
+    text-align: center;
+  }
+}
+
+.choose-role{
+  height: 300px;
+
+  @media only screen and (max-width: 600px) {
+    height: 100px;
+  }
+
+}
+
+@tailwind utilities;

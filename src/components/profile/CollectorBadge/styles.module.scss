@@ -1,0 +1,53 @@
+.collectorWrapper {
+  width: 19.2vw;
+  height: 4.1vw;
+  border: 0.73vw solid;
+  border-image-slice: 1;
+  border-width: 0.73vw;
+  border-image-source: linear-gradient(90deg, #FF6666 97.64%, rgba(2, 221, 226) 144.66%);
+
+  .frameImage {
+    width: 6.5vw;
+    height: 6.4vw;
+    margin-left: -1.8vw;
+    margin-top: -1.8vw;
+  }
+
+  .collectorText {
+    color: white;
+    // position: absolute;
+    // left: 0;
+    padding-left: 0.6vw;
+    // bottom: 8%;
+
+    font-family: Ode Gaming;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.7vw;
+    line-height: 2.7vw;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+
+.common {
+  border: 0.73vw solid;
+  border-image-slice: 1;
+  border-width: 0.73vw;
+  border-image-source: linear-gradient(90deg, #84690B 90.33%, rgba(2, 221, 226) 144.66%);
+}
+
+.semi {
+
+}
+
+.exclusive {
+
+}
+
+.special {
+  border: 0.73vw solid;
+  border-image-slice: 1;
+  border-width: 0.73vw;
+  border-image-source: linear-gradient(90deg, #FF6666 97.64%, rgba(2, 221, 226) 144.66%);
+}

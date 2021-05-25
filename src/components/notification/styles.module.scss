@@ -1,0 +1,37 @@
+.wrapper {
+  background: white;
+  padding: 22px 70px 22px 40px;
+  position: relative;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.15);
+  min-width: 445px;
+}
+
+.img {
+  width: 11px;
+  height: 11px;
+  object-fit: contain;
+}
+
+.closeIcon {
+  position: absolute;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  right: 23px;
+  top: 29px;
+}
+
+.title {
+  font-size: 0.875rem;
+  line-height: 24px;
+  font-weight: bold;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.text {
+  font-size: 0.75rem;
+  line-height: 24px;
+  font-weight: normal;
+}

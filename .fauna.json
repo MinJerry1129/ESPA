@@ -1,0 +1,8 @@
+{
+    "envPath": ".env",
+    "secretEnv": "FAUNADB_SECRET",
+    "schemaPath": "src/fauna/schema.gql",
+    "fnsDir": "src/fauna/functions",
+    "rolesDir": "src/fauna/roles",
+    "indexesDir": "src/fauna/indexes"
+  }

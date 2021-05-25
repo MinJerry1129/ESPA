@@ -1,0 +1,130 @@
+.profileWrapper {
+  display: flex;
+  padding: 20px 86px;
+  font-family: 'Inter';
+  // background: linear-gradient(to bottom right, #7000FF, rgba(204, 0, 255, 0.73));
+
+  @media only screen and (max-width: 980px) {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+}
+
+.leftSideWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.avatarIDSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  img {
+    width: 120px;
+    height: 120px;
+    margin-right: 24px;
+    border-radius: 50%;
+  }
+  span {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+}
+
+.email {
+  font-size: 1.6875rem;
+  margin-bottom: 30px;
+}
+
+.inputItemwrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  span {
+    font-size: 1.6875rem;
+  }
+  p {
+    margin-top: 18px;
+    font-size: 2.0625rem;
+    font-weight: 900;
+  }
+}
+
+.modalButton {
+  width: 154px;
+  font-size: 0.9375rem;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.rightSideWrapper {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.titleWrapper {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  font-weight: bold;
+  color: #111111;
+}
+
+.divider {
+  width: 227px;
+  height: 2px;
+  background: #111111;
+  margin-top: 10px;
+  margin-bottom: 44px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
+  row-gap: 68px;
+  column-gap: 84px;
+  margin-bottom: 100px;
+}
+
+.loader {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.walletAddress {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 49px;
+  span {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  p {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    font-size: 0.625rem;
+    font-family: Inter;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.12em;
+    img {
+      margin-left: 5px;
+      cursor: pointer;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

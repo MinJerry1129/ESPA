@@ -1,0 +1,37 @@
+.textFrameWrapper {
+  position: relative;
+
+  .imgBackground {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 73%;
+  }
+
+  .captionBackground {
+    position: absolute;
+    bottom: 0;
+    height: 36%;
+    width: 40%;
+    background: linear-gradient(90.01deg, #DE5000 0.01%, #02DFE3 273.65%);    
+  }
+
+  .caption {
+    color: white;
+    position: absolute;
+    left: 0;
+    padding-left: 0.6vw;
+    bottom: 8%;
+
+    font-family: Ode Gaming;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.47vw;
+
+    @media (max-width: 764px) {
+      font-size: 1.3vw;
+      padding-left: 1vw;
+    }
+  }
+}

@@ -1,0 +1,172 @@
+.container {
+  width: 929px;
+  border: 1px solid #e6e6e6;
+  padding: 20px 115px 20px 135px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+  @media only screen and (max-width: 980px) {
+    padding: 20px 30px;
+    margin-top: 20px;
+    width: calc(100% - 40px);
+  }
+}
+.profileWrapper {
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width: 980px) {
+    flex-direction: column;
+  }
+}
+
+.avatarWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+  }
+  span {
+    font-weight: 900;
+    font-size: 0.4375rem;
+    letter-spacing: 0.12em;
+    color: #b6b6b6;
+  }
+}
+
+.uploadButton {
+  width: 154px;
+  font-size: 0.9375rem;
+  margin-bottom: 26px;
+}
+
+.detailsWrapper {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  span {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+
+    &.questionMark {
+      color: black;
+      width: 15px;
+      height: 15px;
+      border: 1px solid #e6e6e6;
+      border-radius: 15px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.5625rem;
+      line-height: 11px;
+      font-weight: 600;
+      background: #fff;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+    
+    &.hint {
+      display: none;
+      position: absolute;
+      width: 165px;
+      padding: 4px;
+      border: 0.5px solid #000000;
+      background: #fff;
+      color: black;
+      font-family: Inter;
+      line-height: 120%;
+      top: 0px;
+      left: 120px;
+    }
+    
+    &.questionMark:hover + .hint {
+      display: block;
+    }
+  }
+  p {
+    font-size: 0.5625rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    color: #b6b6b6;
+    margin-bottom: 6px;
+  }
+  input {
+    width: 363px;
+    height: 44px;
+    border: 1px solid #e6e6e6;
+    padding-left: 12px;
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+    }
+  }
+}
+
+.saveButton {
+  font-size: 0.9375rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pageLoader,
+.loader {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: auto;
+}
+
+.pageLoader {
+  // padding-top: 20px;
+  margin-top: -200px;
+}
+
+.ipInput {
+  display: flex;
+  input {
+    width: 250px;
+    margin-right: 12px;
+  }
+}
+
+.detectIpButton {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 44px;
+  font-size: 0.9375rem;
+}
+
+
+
+.ipAddrLabel {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.backProfileButton {
+  font-size: 0.5rem;
+  position: absolute;
+  bottom: 32px;
+  left: 39px;
+  white-space: nowrap;
+  @media only screen and (max-width: 480px) {
+    top: 10px;
+    left: 10px;
+  }
+}

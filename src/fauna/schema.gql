@@ -1,0 +1,8 @@
+type Mutation {
+  unsubscribe(email: String!): Boolean! @resolver(name: "unsubscribe")
+  subscribe(email: String!): Boolean! @resolver(name: "subscribe")
+}
+
+type Subscriptions {
+  email: String! @unique
+}

@@ -1,0 +1,34 @@
+$espaYellow: #D4CF02; 
+$espaYellow2: #FFF900;
+
+.espa-bg-yellow {
+  background-color: $espaYellow
+}
+
+.espa-border-yellow {
+  border-color: $espaYellow
+}
+
+.espa-bg-yellow-2 {
+  background-color: $espaYellow2
+}
+
+.espa-text-yellow-2 {
+  color: $espaYellow2
+}
+
+.espa-border-yellow-2 {
+  border-color: $espaYellow2
+}
+
+.hover\:espa-text-yellow-2 {
+ &:hover {
+  color: $espaYellow2
+ } 
+}
+
+.hover\:espa-border-yellow-2 {
+  &:hover {
+   border-color: $espaYellow2
+  } 
+ }

@@ -1,0 +1,64 @@
+.rightSideWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}
+
+.buttonWrapper {
+  position: relative;
+  margin-right: 20px;
+  @media (max-width: 767px) {
+    margin-right: 8px;
+  }
+
+  @media (max-width: 400px) {
+    margin-right: 4px;
+  }
+}
+
+.menuWrapper {
+  position: absolute;
+  margin-top: 10px;
+  z-index: 9;
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
+}
+
+.menuButton {
+  // @include reset-button();
+  // @include active();
+  color: black;
+  border: 1px solid #e6e6e6;
+  background: white;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 10px 16px;
+  width: 100%;
+  top: 100%;
+  font-size: 0.75rem;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+.hashAddress {
+  :global {
+    .smallPhotoWithText__hashAddress {
+      max-width: 94px;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.arrowBottomImg {
+  padding: 8px 0 8px 8px;
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
