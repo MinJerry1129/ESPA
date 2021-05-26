@@ -36,36 +36,17 @@ const Discover = () => {
             <div className="flex flex-col justify-center md:flex-row">
               <div className="flex mb-10 md:mb-0 flex-wrap">
                 <div className="flex flex-col items-center w-full sm:w-4/12">
-                  <img src="/leaderboard/tier4.png" />
+                  <img src="/leaderboard/discover1.png" />
                   <div className="bg-white text-black h-10 w-60 p-2 items-center flex">
                   </div>
                 </div>
                 <div className="flex flex-col items-center w-full sm:w-4/12">
-                  <img src="/leaderboard/tier4.png" />
+                  <img src="/leaderboard/discover2.png" />
                   <div className="bg-white text-black h-10 w-60 p-2 items-center flex">
                   </div>
                 </div>
                 <div className="flex flex-col items-center w-full sm:w-4/12">
-                  <img src="/leaderboard/tier4.png" />
-                  <div className="bg-white text-black h-10 w-60 p-2 items-center flex">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col justify-center md:flex-row">
-              <div className="flex mb-10 md:mb-0 flex-wrap">
-                <div className="flex flex-col items-center w-full sm:w-4/12">
-                  <img src="/leaderboard/tier4.png" />
-                  <div className="bg-white text-black h-10 w-60 p-2 items-center flex">
-                  </div>
-                </div>
-                <div className="flex flex-col items-center w-full sm:w-4/12">
-                  <img src="/leaderboard/tier4.png" />
-                  <div className="bg-white text-black h-10 w-60 p-2 items-center flex">
-                  </div>
-                </div>
-                <div className="flex flex-col items-center w-full sm:w-4/12">
-                  <img src="/leaderboard/tier4.png" />
+                  <img src="/leaderboard/discover3.png" />
                   <div className="bg-white text-black h-10 w-60 p-2 items-center flex">
                   </div>
                 </div>
@@ -74,17 +55,17 @@ const Discover = () => {
             <div className="flex flex-col justify-center md:flex-row">
               <div className="flex mb-10 md:mb-0 flex-wrap">
                 <div className="flex flex-col items-center w-full sm:w-4/12">
-                  <img src="/leaderboard/tier4.png" />
+                  <img src="/leaderboard/discover4.png" />
                   <div className="bg-white text-black h-10 w-60 p-2 items-center flex">
                   </div>
                 </div>
                 <div className="flex flex-col items-center w-full sm:w-4/12">
-                  <img src="/leaderboard/tier4.png" />
+                  <img src="/leaderboard/discover5.png" />
                   <div className="bg-white text-black h-10 w-60 p-2 items-center flex">
                   </div>
                 </div>
                 <div className="flex flex-col items-center w-full sm:w-4/12">
-                  <img src="/leaderboard/tier4.png" />
+                  <img src="/leaderboard/discover6.png" />
                   <div className="bg-white text-black h-10 w-60 p-2 items-center flex">
                   </div>
                 </div>

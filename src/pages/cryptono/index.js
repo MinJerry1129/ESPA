@@ -20,7 +20,7 @@ const Cryptoyes = () => {
             <Button
               buttonstyle='mustread'
               className="mx-12 text-base w-198 h-57"
-              onClick={() => router.push("/playnow/20")}
+              onClick={() => router.push("/mustread")}
             >
               must read
             </Button>
