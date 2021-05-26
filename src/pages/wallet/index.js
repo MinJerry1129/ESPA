@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 import Button from "@components/Button";
 import styles from '@components/Button/return-button.module.scss'
 
-const Signup = () => {
-  usePageTitle("Sign Up");
+const Wallet = () => {
+  usePageTitle("Mona");
 
   const router = useRouter();
 
@@ -13,19 +13,19 @@ const Signup = () => {
       <div>
         <div className="flex flex-col items-center">
           <p className="text-base">steps to start playing:</p>
-          <p className= "my-12 text-base text-center signup_description">
-          Have you ever used cryptocurrency before? Do you know what it is?
+          <p className= "my-12 text-base text-center ctyptoyes_description">
+          Do you have any $MONA token and Eth (Ethereum) in your Metamask or arkane Wallet?
           </p>
           <div className="flex text-xl justify-space-around">
             <Button
               className="mx-12 px-10 text-base w-198 h-57"
-              onClick={() => router.push("/cryptoyes")}
+              onClick={() => router.push("/playnow/20")}
             >
               Yes
             </Button>
             <Button
               className="mx-12 px-10 text-base w-198 h-57"
-              onClick={() => router.push("/cryptono")}
+              onClick={() => router.push("/playnow/19")}
             >
               No
             </Button>
@@ -42,7 +42,7 @@ const Signup = () => {
         <Button
           buttonstyle='none'
           className="returnButton w-198 h-57"
-          onClick={() => router.push('/quest')}
+          onClick={() => router.push('/signup')}
         >
           return
         </Button>
@@ -52,4 +52,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Wallet;

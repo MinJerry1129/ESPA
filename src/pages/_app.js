@@ -57,6 +57,7 @@ const MyApp = ({ Component, pageProps, store, err }) => {
     } else {
       setLoadArkane(false)
     }
+
     handleResize();
   }, [router.route, router.query.step]);
 
@@ -210,7 +211,11 @@ const MyApp = ({ Component, pageProps, store, err }) => {
       </Head>
       <div className="container-wrapper" ref={containerRef}>
         <InitWrapper>
-          <img src='/back.jpg' className='background-image' />
+          { router.route !== "/closeaccount" ?
+          <img src="/back.jpg" className='background-image' />
+          :
+          <img src="/close_back.jpg" className='background-image' /> 
+          }
           <div className="relative flex flex-row page-container text-white">
             <div className={`back-overlay ${overLayMode === 2 && "back-overlay3"} ${overLayMode === 1 && "back-overlay2"} ${overLayMode === 3 && "back-overlay4"}`}></div>
             <div className="w-full z-10">

@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 import Button from "@components/Button";
 import styles from '@components/Button/return-button.module.scss'
 
-const Signup = () => {
-  usePageTitle("Sign Up");
+const Cryptoyes = () => {
+  usePageTitle("Mona");
 
   const router = useRouter();
 
@@ -13,19 +13,21 @@ const Signup = () => {
       <div>
         <div className="flex flex-col items-center">
           <p className="text-base">steps to start playing:</p>
-          <p className= "my-12 text-base text-center signup_description">
-          Have you ever used cryptocurrency before? Do you know what it is?
+          <p className= "my-12 text-base text-center ctyptoyes_description">
+          wow! you are in for a ride! it’s going to be exciting. there are a few things to look out for. first tAKE A QUICK LOOK AT OUR MUST READ!
           </p>
-          <div className="flex text-xl justify-space-around">
+          <div className="text-xl text-center">
             <Button
-              className="mx-12 px-10 text-base w-198 h-57"
-              onClick={() => router.push("/cryptoyes")}
+              buttonstyle='mustread'
+              className="mx-12 text-base w-198 h-57"
+              onClick={() => router.push("/playnow/20")}
             >
-              Yes
+              must read
             </Button>
+            <p className="text-base mb-8">still daring to continue your quest?</p>
             <Button
-              className="mx-12 px-10 text-base w-198 h-57"
-              onClick={() => router.push("/cryptono")}
+              className="mx-12 text-base w-198 h-57"
+              onClick={() => router.push("/playnow/19")}
             >
               No
             </Button>
@@ -42,7 +44,7 @@ const Signup = () => {
         <Button
           buttonstyle='none'
           className="returnButton w-198 h-57"
-          onClick={() => router.push('/quest')}
+          onClick={() => router.push('/signup')}
         >
           return
         </Button>
@@ -52,4 +54,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Cryptoyes;

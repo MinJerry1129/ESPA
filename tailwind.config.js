@@ -9,6 +9,7 @@ module.exports = {
         mod: "1vw",
         "mod-sm": "2vw",
         20:'20px',
+        "4x1875": "2.1875rem",
       },
       colors: {
         primary: "#2340B0",
@@ -25,6 +26,7 @@ module.exports = {
       maxWidth: {
         732: '732px',
         941: '941px',
+        1021: "1021px",
       },
       width: {
         60: "15rem",
@@ -47,6 +49,9 @@ module.exports = {
         'laptop-2': '946px',
         'laptop-1': '1066px', 
       },
+      margin: {
+        '10p': '10%',
+      },
       borderColor: ["hover", "focus"],
       textColor: ["hover", "focus"],
       backgroundColor: ["hover", "focus"],
@@ -56,6 +61,8 @@ module.exports = {
       sans: ["Ode Gaming", "Tw Cent"],
     },
   },
-  variants: {},
+  variants: {
+    margin: ['responsive', 'hover', 'first'],
+  },
   plugins: [],
 };

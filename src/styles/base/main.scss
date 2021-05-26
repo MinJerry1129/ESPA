@@ -267,7 +267,15 @@ td:last-child {
 .signin_title {
   color: #F1FF54;
 }
-
+.signup_description {
+ max-width: 659px; 
+}
+.ctyptoyes_description {
+  max-width: 997px;
+}
+.wallet_description {
+  max-width: 876px;
+}
 a {
   text-decoration: none;
 }
@@ -276,6 +284,31 @@ p,
 button,
 div {
   font-size: 12px;
+}
+
+.bottom_button {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 30px;
+  bottom: 80px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+.returnButton {
+  margin-top: 29px;
+}
+.btnOverlay {
+  background: #D4CF02;
+  border: none;
+}
+.must_read {
+  background-color: #FFFFFF;
+  color: #E23939;
+  border: 2px solid #E23939;
+  margin-bottom: 55px;
 }
 .return {
   bottom: 95px;

@@ -115,7 +115,7 @@ const Header = () => {
             )}
           </div>
         ) : (
-          <Link href="/signin">
+          <Link href="/signin/">
             <a className="mr-10 right-menu">SIGN IN</a>
           </Link>
         )}

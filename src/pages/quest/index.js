@@ -18,8 +18,8 @@ const Quest = () => {
         </div>
         <Button
             buttonstyle = "overlay"
-            className={`${styles.btnOverlay} text-base w-198 h-57 mb-5`}
-            onClick={() => router.push('/playnow')}
+            className="btnOverlay text-base w-198 h-57 mb-5"
+            onClick={() => router.push('/signup')}
           >
             SIGN UP
         </Button>

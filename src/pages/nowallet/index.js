@@ -4,7 +4,7 @@ import Button from "../../components/Button";
 import { openConnectMetamaskModal } from "@actions/modals.actions";
 import { useRouter } from "next/router";
 
-const Singin = () => {
+const Nowallet = () => {
   const dispatch = useDispatch();
   const handleClick = () => {
     dispatch(openConnectMetamaskModal());
@@ -29,8 +29,8 @@ const Singin = () => {
           <p className="text-base pb-8 font-ode-gaming font-normal">steps to start playing:</p>
           <p className="text-base max-w-941 text-center font-ode-gaming font-normal">
             NOW YOU MUST CREATE YOUR WALLET.
-            <span className="text-3xl font-inter font-black signin_title">
-            You Will Be Generated An ARKANE WALLET On Matic Network.
+            <span className="text-2xl font-inter font-black signin_title">
+            Please Choose Either An Arkane or Metamask Wallet. If You Are New to Crypto then Choose Arkane Wallet.
             </span>
           </p>
         </div>
@@ -64,4 +64,4 @@ const Singin = () => {
   );
 };
 
-export default Singin;
+export default Nowallet;

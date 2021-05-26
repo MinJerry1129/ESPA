@@ -9,6 +9,10 @@ const Button = props => {
     buttonClasses = 'font-bold border-white hover:espa-border-yellow-2 hover:espa-text-yellow-2'
   } else if (buttonstyle === "overlay") {
     buttonClasses = 'font-bold border-white'
+  } else if (buttonstyle === "mustread") {
+    buttonClasses = 'font-bold must_read'
+  } else if(buttonstyle === "none") {
+    buttonClasses = 'border-none'
   }
 
   return (
